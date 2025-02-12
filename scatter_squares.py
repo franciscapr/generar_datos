@@ -5,7 +5,7 @@ y_values = [x ** 2 for x in x_values]
 
 plt.style.use('Solarize_Light2')
 fig, ax = plt.subplots()
-ax.scatter(x_values, y_values, s=10, color='pink')
+ax.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, s=10)
 
 # Establece el tìtulo del gràfico y las etiquetas de los ejes.
 ax.set_title("Square Numbers", fontsize=24)
