@@ -1,8 +1,13 @@
 import matplotlib.pyplot as plt
 
+input_values = [1, 2, 3, 4, 5]
 squares = [1, 4, 9, 16, 25]
+plt.style.use('seaborn-v0_8')
+# Solarize_Light2
+
+
 fig, ax = plt.subplots()
-ax.plot(squares, linewidth=3)
+ax.plot(input_values, squares, linewidth=3)
 
 # Establece el tìtulo del gràfico y las etiquetas de los ejes.
 ax.set_title("Square Numbers", fontsize=24)
