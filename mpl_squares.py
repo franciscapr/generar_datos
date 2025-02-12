@@ -5,6 +5,8 @@ squares = [1, 4, 9, 16, 25]
 plt.style.use('seaborn-v0_8')
 # Solarize_Light2
 
+plt.scatter(2, 4, s=200)
+
 
 fig, ax = plt.subplots()
 ax.plot(input_values, squares, linewidth=3)
