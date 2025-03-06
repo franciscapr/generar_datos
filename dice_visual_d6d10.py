@@ -27,4 +27,7 @@ fig = px.bar(x=poss_results, y=frequencies, title=title, labels=labels)
 # Añade personalizaciones al gràfico.
 fig.update_layout(xaxis_dtick=1)
 
-fig.show()
+# Guardar la figura
+fig.write_html('dice_visual_d6d10.html')
+
+# fig.show()
