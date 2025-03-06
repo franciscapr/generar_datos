@@ -1,4 +1,5 @@
 from die import Die
+import plotly.express as px
 
 # Crea un D6.
 die = Die()    # Creamos una instancia de Die de seis lados por defecto.
@@ -14,9 +15,14 @@ for roll_num in range(1000):    # Tiramos el dado 100 veces
 # print(results)
 
 # Analiza los resultados.
-frequencies = []
+frequencies = []    # Creamos una lista vacia.
 poss_results = range(1, die.num_sides+1)
 for value in poss_results:
     frequency = results.count(value)
     frequencies.append(frequency)
 print(frequencies)
+
+
+# Visualiza los resultados.
+fig = px.bar(x=poss_results, y=frequencies)
+fig.show()
