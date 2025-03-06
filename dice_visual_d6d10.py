@@ -3,7 +3,7 @@ from die import Die
 
 # Crea un D6 y un D10.
 die_1 = Die()
-die_2 = Die()
+die_2 = Die(10)
 
 # Hace algunas tiradas y guarda los resultados en una lista.
 results = []
